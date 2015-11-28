@@ -1,0 +1,14 @@
+html { 
+  background: url(p.jpg)  center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#time{
+	margin-left: 1100px;
+	color: white;
+}
+.log{
+	
+}

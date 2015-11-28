@@ -1,0 +1,18 @@
+.log {
+	/*text-align: center;
+	margin: 0 auto;*/
+	/*background-color: #FAEBD7;*/
+	/*text-align: center;*/
+	color: orange;
+	font-size: 20px;
+}
+/*.log textarea{
+	text-align: center;
+}*text-align: center;*/
+html { 
+  background: url("signup.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
