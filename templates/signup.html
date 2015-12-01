@@ -1,0 +1,36 @@
+<html>
+<head>
+	{%load staticfiles%}
+	<link rel = "stylesheet" href="{%static 'winit/Css/style1.css'%}">
+	<script src="{%static 'winit/Js/signup.js'%}"></script>
+	<title>signup page</title>
+</head>
+<body>
+	
+	<form name="signup" action="/winit/registered/"  method="POST">{%csrf_token %}
+	<div class = "log">
+		<p>{{error}}</p>
+
+		<h2>SIGNUP AND BECOME A PART OF WIN IT!!</h2>
+		FIRSTNAME:<input type = "text" name="fname" id="fname" required><br><br>
+		LASTNAME:<input type = "text" name="lname" id = "lname" required><br><br>
+		DATE OF BIRTH:<input type = "date"  name="dob" required>
+		<br><br>
+		ADDRESS:<textarea rows="4" id = "address"name="addr"cols="50" required></textarea><br><br>
+		E-MAIL:<input type="email" id = "mailid" name="usremail" required><br><br>
+		USERNAME:<input id="name" name="username" placeholder="username" type="text" required>
+		<br><br>
+		PASSWORD:
+		<input id="password" name="password" placeholder="**********" type="password" required>
+		<br><br>
+		CONFIRM PASSWORD:
+		<input id="cpassword" name="cpassword" placeholder="**********" type="password" required>
+		<br><br>
+		CONTACT NUMBER:<input type = "text" name = "number"id ="pno" required><br><br>
+
+		<input name="submit" type="submit" onclick="myFunction()">
+	</div>
+	</form>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href="start.css"> 
+	<title>start page </title>
+	
+	<script type = "text/javascript" src ="jquery-1.4.4.min.js"></script>
+	<script type = "text/javascript" src ="countdown.js"></script>
+
+  
+</head>
+<body topmargin="250" leftmargin="500">
+	<form action="{% url 'winit:exam' %}">
+<div class = "log">
+			<h2>Select Any Topic Here  </h2>
+			Topic: 
+			<select name="questions">
+			<option value="Categories">Categories</option>
+    		<option value="History">History</option>
+    		<option value="Politics">Politics</option>
+    		<option value="current affairs">current affairs</option>
+    		<option value="General topics">General</option>
+  
+  			</select>
+  			<br><br>
+
+		
+		<input name="submit" type="submit" value=" start ">
+	</div>
+</form>
+</body>
+</html>

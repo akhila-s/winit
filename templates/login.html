@@ -1,0 +1,40 @@
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href="login.css">
+	<title>login page</title>
+</head>
+<body topmargin="250" leftmargin="500">
+	<form action="" method="">
+		<div class="log">
+		<h2>LOGIN HERE</h2>
+		E-mail:<input hspace="25"type="email" name="usermail"><br><br>
+		password:<input hspace="10" id="password" name="password"  type="password">
+		<br><br>
+		
+		<label><input type="checkbox"> Remember me</label>
+		<input hspace="120" name="submit" type="submit" value=" login ">
+		<br>
+
+		<a href="forgot.html"><h3 >Forgot your password ?</h3></a>
+	</div>
+</form>
+</body>
+</html>
+
+<!-- {% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}Login{% endblock %}
+{% block content %}
+    {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+    <form method="post" action=".">{% csrf_token %}
+        <table border="0">
+            <tr><th><label for="id_username">Username:</label></th><td>{{ form.username }}</td></tr>
+            <tr><th><label for="id_password">Password:</label></th><td>{{ form.password }}</td></tr>
+        </table>
+        <input type="submit" value="Login" />
+        <input type="hidden" name="next" value="/home" />
+    </form>
+    <a href="/register">Register</a>
+{% endblock %} -->

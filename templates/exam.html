@@ -1,0 +1,32 @@
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href="exam.css">
+	<!-- <title>exam </title> -->
+	<!-- <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<script type = "text/javascript" src ="jquery-1.4.4.min.js"></script>
+	<script type = "text/javascript" src ="countdown.js"></script>
+
+  	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+ -->
+</head>
+<body >
+	<div id = "time" >
+		Timer:<input type = "text" id="timer">
+		<script type = "text/javascript">
+		timer = new Countdown();
+		timer.init();
+		</script>
+	</div>
+	<form action="{% url 'winit:thanku' %}" method="">
+	<div class = "log" >
+			
+		Answer Here:<textarea rows="4" cols="50"></textarea><br><br>
+		<input name="submit" type="submit" value=" submit ">
+	</div>
+
+</form>
+</body>
+</html>

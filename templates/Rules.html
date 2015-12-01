@@ -1,0 +1,36 @@
+<html>
+<head>
+	<link rel = "stylesheet" type = "text/css" href="Rules.css">
+	<title>rules</title>
+</head>
+<body>
+	<form action="{% url 'winit:start' %}" method="POST">
+		{% csrf_token %}
+		<div class = "rule">
+			<!-- <div class="subdiv" align:right>Welcome {{ user.username }}</div> -->
+
+			<div class ="log">
+				<br>
+				<h2>Rules and Conditions</h2>
+				<p>1.The essay should be written in English and be NO MORE than 300 words</p>
+				<p>2.Do not include any pictures or other illustrations</p>
+				<p>3.The essay should be an original piece of work. It should be written in the pupils own words and not copied from any books, articles, or from the internet</p>
+				<p>4.High quality examples</p>
+				<p>5.Include a purposeful conclusions</p>
+				<p>6.Results will be announced on the comming weekend</p>
+			</div>
+			<div class ="sub">
+				<!-- <form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } 
+				else { alert('Please indicate that you have read and agree to the Terms and Conditions '); return false; }">
+				{% csrf_token %}
+ -->
+				<input type="checkbox" name="checkbox" value="check" id="agree" required/> I have read and agree to the Terms and Conditions 
+				<br><br><input type="submit" name="submit" value="submit" />
+
+				<!-- </form> -->
+				<!-- <input type="submit" name="submit" value="start"> -->
+			</div> 
+		</div>
+</body>
+</form>
+</html>
