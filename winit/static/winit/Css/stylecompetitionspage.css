@@ -1,0 +1,33 @@
+.title{
+	padding-top:1%;
+	padding-left: 15%;
+	background-image: url("10.jpg")
+}
+.text{
+	padding-left: 2%;
+	position: absolute;
+	top:15%;
+	padding-right: 45%;
+	font-size:large;
+	color:black;
+	text-align: center;
+}
+.maintext{	
+	height: 100%;
+	width: 60%;
+	padding-top:0%;
+	padding-left: 10%;
+	padding-right: 30%;
+}
+.main{
+	display:flex;
+}
+.firstimg{
+	height:15%;
+	width: 10%;
+	float:right;
+	margin-top: 5%;
+}
+.secondmain{
+	/*text-align: center;*/
+}

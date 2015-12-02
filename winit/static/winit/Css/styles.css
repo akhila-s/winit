@@ -3,9 +3,9 @@
 	top :0%;
 }
 .icon_comp{
-	padding-left: 15%;
+	padding-left: 9%;
 	position:absolute;
-	top:2%;
+	top:6%;
 }
 .mainbody{
 	
@@ -14,7 +14,7 @@
 .pins{
 	padding-left: 28%;
 	position: absolute;
-	top:10%;
+	top:12%;
 	color: "black";
 	font-family: cursive;
 }
@@ -36,8 +36,8 @@
 }
 .body{
 	position: absolute;
-	top:119%;
-	padding-left:64%;
+	top:121%;
+	padding-left:68%;
 }
 /*html { 
  background: url(9.jpg)  center center fixed; 
