@@ -18,9 +18,13 @@ from django.contrib import admin
 
 urlpatterns = [
 	url(r'^winit/', include('winit.urls', namespace="winit")),
+<<<<<<< HEAD
     url(r'^$', 'winit.views.home',name='home'),
+=======
+    url(r'^registered/', include('registered.urls', namespace="registered")),
+    url(r'^$', 'winit.views.login',name='login'),
+>>>>>>> cf3e7bb7c426f48ff3c6b4e61ef3aba23ab5ec56
     url(r'^admin/', include(admin.site.urls)),
-
 ]
 # from django.conf.urls import patterns, include, url
 

@@ -1,14 +1,24 @@
 <html>
 <head>
+<<<<<<< HEAD
 	{%load staticfiles%}
 	<link rel = "stylesheet" href="{%static 'winit/Css/Rules.css'%}">
+=======
+	<link rel = "stylesheet" type = "text/css" href="Rules.css">
+>>>>>>> cf3e7bb7c426f48ff3c6b4e61ef3aba23ab5ec56
 	<title>rules</title>
 </head>
 <body>
 	<form action="{% url 'winit:start' %}" method="POST">
 		{% csrf_token %}
+<<<<<<< HEAD
 		<input type ="hidden" name = "username"	value = "{{username}}">
 		<div class = "rule">
+=======
+		<div class = "rule">
+			<!-- <div class="subdiv" align:right>Welcome {{ user.username }}</div> -->
+
+>>>>>>> cf3e7bb7c426f48ff3c6b4e61ef3aba23ab5ec56
 			<div class ="log">
 				<br>
 				<h2>Rules and Conditions</h2>
