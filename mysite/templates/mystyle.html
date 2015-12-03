@@ -1,0 +1,49 @@
+<!-- Latest compiled and minified CSS -->
+<html>
+<head>
+	{%load staticfiles%}
+<link rel="stylesheet" href="{%static 'winit/Css/bootstrap.min.css'%}">
+
+<!-- jQuery library -->
+<script src="{%static 'winit/Js/jquery.min.js'%}"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="{%static 'winit/Js/bootstrap.min.js'%}"></script>
+	<link rel = "stylesheet" type = "text/css" href="{%static 'winit/Css/styles.css'%}">
+</head>
+<body>
+	<div class = "main">
+		<div class = "title">
+			<div class = "titles_img">
+				<img src ="{%static 'winit/Images/1.jpg'%}" width = "100%" height="20%"></div>
+			<div class = "icon_comp">
+				<img src="{%static 'winit/Images/logo.png'%}" width = "75%" ></div>
+			<div class = "pins" >
+				<div class="btn-group">
+				  <button type="button" class="btn btn-link btn-lg"><a href="/winit/comp/">COMPETITIONS</a></button>
+				  <button type="button" class="btn btn-link btn-lg"> ABOUT US </button>
+				  <button type="button" class="btn btn-link btn-lg">WINNER'S GALLERY</button></div>			
+			</div>	
+			<div class = "status" align="right">
+				<div class = "login">
+					<a href = "/winit/signin"><img src= "{%static 'winit/Images/7.png'%}"  width = "85%" height ="6%"></a>
+				</div>
+				<div class = "sign_up">
+					<a href = "/winit/registered"><img src = "{%static 'winit/Images/8.png'%}" width = "85%" height ="6%">
+					</a>
+				</div>
+			</div>	
+		</div>
+		<div class = "mainbody">
+			<img src = "{%static 'winit/Images/9.jpg'%}" width="100%"></div>		
+		<div class = "body">
+			<div class="btn-group">
+
+			  <button type="button" class="btn btn-link btn-md"> <a href="/winit/tc/">Terms And Conditions |</a></button>
+			  <button type="button" class="btn btn-link btn-md"> <a href="/winit/disc/"> Disclaimer |</button>
+			  <button type="button" class="btn btn-link btn-md"> About Us </button>
+			</div>	
+		</div> 
+	</div>
+</body>
+</html>

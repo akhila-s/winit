@@ -1,0 +1,37 @@
+<html>
+<head>	 
+	{%load staticfiles%}
+	<link rel = "stylesheet" href="{%static 'winit/Css/exam.css'%}">
+	<script type = "text/javascript" src ="jquery-1.4.4.min.js"></script>
+	<script src ="{%static 'winit/Js/timer.js'%}"></script>
+</head>
+<body >
+	<div id = "timer" >
+		Timer:<p id ='time'></p>		
+	</div>
+	<form action="/winit/answer/" method="POST">
+		{% csrf_token %}
+	<div class = "log" >
+		<input type ="hidden" name = "username"	value = "{{username}}">
+			<div class = "ques">
+				<div class="questions">
+			{% if question %}
+    <ul>
+		    {% for question1 in question %}
+		    <input type ="hidden" name = "qno"	value = "{{ question1.queno}}">
+
+		        {{ question1.question}}
+		    {% endfor %}
+		    </ul>
+		{% else %}
+		    <p>No polls are available.</p>
+		{% endif %}
+		</div>
+			</div>
+		Answer Here:<textarea name = "essay" rows="4" cols="50"></textarea><br><br>
+		<input name="submit" id= "submit" type="submit" value=" submit ">
+	</div>
+
+</form>
+</body>
+</html>

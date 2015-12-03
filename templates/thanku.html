@@ -5,14 +5,14 @@
 	<script type = "text/javascript" src ="jquery-1.4.4.min.js"></script>
 </head>
 <body > <!-- topmargin="250" leftmargin="500"> -->
-	<form action="" method="POST">
+	<!-- <form action="" method="POST"> -->
 		{% csrf_token %}
 		<div class = "log">
 			<h3><font color="white"> Thank you for your participation</font></h3>
 			<p><font color="white"> We will get back to you with the results by the following Weekend</font></p><br><br>
-			<a href="Register.html"><input type="submit" type="submit" value="Home"></a>
+			<input type="submit" type="submit" value="Home" onclick ="location ='/'">
 			<input type="submit" type="submit" value="logout">
 		</div>
-	</form>
+	<!-- </form> -->
 </body>
 </html>

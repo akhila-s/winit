@@ -1,0 +1,34 @@
+<html>
+<head>
+	{%load staticfiles%}
+	<link rel = "stylesheet" href="{%static 'winit/Css/start.css'%}">
+
+	<title>start page </title>
+	
+	<script type = "text/javascript" src ="jquery-1.4.4.min.js"></script>
+	 
+
+  
+</head>
+<body topmargin="250" leftmargin="500">
+	<form action="exam/" method = "POST">
+		{%csrf_token %}
+<div class = "log">
+			<h2>Select Any Topic Here  </h2>
+			Topic: 
+			<select name="questions">
+			<option value="Categories">Categories</option>
+    		<option value="General">General</option>
+    		<option value="Indian History">Indian History</option>
+    		<option value="current affairs">current affairs</option>
+    		<option value="Education">Education</option>
+  
+  			</select>
+  			<br><br>
+
+			<input type ="hidden" name = "username"	value = "{{username}}">
+		<input name="submit" type="submit" value=" start ">
+	</div>
+</form>
+</body>
+</html>

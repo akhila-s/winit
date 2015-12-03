@@ -1,0 +1,22 @@
+<html>
+<head>
+	{%load staticfiles%}
+	
+	<link rel = "stylesheet" href="{%static 'winit/Css/style1.css'%}">
+	<!--script src="{%static 'winit/Js/signup.js'%}"></script>-->
+	<title>signin page</title>
+</head>
+<body background="signup.jpg">
+	<form name = "signIn" action = "/winit/signin/" method = "POST">{%csrf_token %}
+		<div class = "log">
+			<p>{{error}}</p>
+			<h2>SIGN IN!!</h2>
+			USERNAME:<input id="username" name="username" placeholder="username" type="text" required>
+			<br><br>
+			PASSWORD:
+			<input id="password" name="password" placeholder="**********" type="password" required><br><br>
+			<input name="login" type="submit"></a>
+		</div>
+	</form>
+</body>
+</html>

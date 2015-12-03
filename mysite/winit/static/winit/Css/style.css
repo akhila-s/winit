@@ -1,0 +1,33 @@
+.main {
+	margin: 0 auto;
+	/*background-color: skyblue;*/
+	/*max-width: 5000px;
+	max-height: 800px;
+	color: blue;*/
+	/*background-image: url("xxxx.jpg");*/
+}
+/*.img {
+	max-width: 1000px;
+	max-height: 200px;
+}*/
+h1.head {
+	background-image: url("1.jpg");
+	
+	text-align: center;
+	color : #663366;
+	margin-left: 10px;
+
+
+}
+
+.one {
+	margin: 0 auto;
+	text-align: center;
+	color : #663366;
+	margin-left: 20px;
+}
+
+/*a.two {
+	text-align: center;
+	color : #00FF00;
+}*/

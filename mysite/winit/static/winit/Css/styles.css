@@ -1,0 +1,48 @@
+.titles_img{
+	position: absolute;
+	top :0%;
+}
+.icon_comp{
+	padding-left: 9%;
+	position:absolute;
+	top:6%;
+}
+.mainbody{
+	
+	width:100%;
+}
+.pins{
+	padding-left: 28%;
+	position: absolute;
+	top:12%;
+	color: "black";
+	font-family: cursive;
+}
+.login{
+	position: absolute; 
+	top :4%;
+	padding-left: 91%;
+}
+/*.pic{
+	position: absolute; 
+	top :3.5%;
+	padding-left: 62%;
+	padding-right:1%;
+}*/
+.sign_up{
+	position: absolute; 
+	top :11%;
+	padding-left: 92%;
+}
+.body{
+	position: absolute;
+	top:121%;
+	padding-left:68%;
+}
+/*html { 
+ background: url(9.jpg)  center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}*/

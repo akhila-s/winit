@@ -15,7 +15,7 @@ from django.http import HttpResponse
 def home(request):
 	return render(request,"mystyle.html")
 	# fields = '__all__'
-<<<<<<< HEAD
+
 def comp(request):
 	return render(request,"competitions.html")
 def tc(request):
@@ -85,8 +85,6 @@ def check(request):
 		else:
 			context['error'] = 'Inavlid username or password'
 	return render(request,'signin.html',context)
-=======
-<<<<<<< HEAD
 def start(request):
 	return render(request,"start.html")
 
